@@ -9,15 +9,17 @@ const ingredients = ["Potatoes", "Mushrooms", "Garlic", "Tomatos", "Herbs", "Con
 
 const ourIngredients = document.querySelector("#ingredients");
 
+// отримати масив з елементами map, щоб не перебирати кожний через [0], [1], [2]
+
 const elements = ingredients.map((ingredient) => {
   const makeNew = document.createElement("li");
   makeNew.textContent = ingredient;
-  console.log(makeNew);
   makeNew.classList.add("item");
 
   return makeNew;
 });
 
+// Розпакували масив з елементами в метод із обєктами (елементами)
 ourIngredients.append(...elements);
 
 // const ourIngredients = document.querySelector("#ingredients");

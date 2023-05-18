@@ -20,6 +20,10 @@ const images = [
 
 const ourImages = document.querySelector(".gallery");
 
-const makeGallery = images.map(({ url, alt }) => `<li><img src="${url} alt="${alt} height="800"></li>`);
+const makeGallery = images.map(({ url, alt }) => {
+  return `<li><img src="${url} alt="${alt} height="800"></li>`;
+});
 
-ourImages.insertAdjacentHTML("beforeend", makeGallery);
+//join прибрав коми і він повернув нам суцільний рядок без ,
+// //додати розмітку в html
+ourImages.insertAdjacentHTML("beforeend", makeGallery.join(""));
