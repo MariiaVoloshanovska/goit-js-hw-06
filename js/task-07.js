@@ -5,12 +5,23 @@
 const inputControl = document.querySelector("#font-size-control");
 const textAbra = document.querySelector("#text");
 
-inputControl.addEventListener("input", () => {
+const changeSize = () => {
   textAbra.style.fontSize = `${inputControl.value}px`;
-});
-//функція виконується, коли подія відбувається стосовно елемента.
-//button.addEventListener("click", () => {
-//console.log("Button was clicked");
-//});
-//ТУТ коли до кнопки застосовується подія клікб викликається функція виводу в консоль тексту 'Button was clicked'
+};
+
+inputControl.addEventListener("input", changeSize);
 console.log(inputControl.value);
+
+// short variant
+
+// inputControl.addEventListener("input", () => {
+//   textAbra.style.fontSize = `${inputControl.value}px`;
+// });
+// console.log(inputControl.value);
+
+//функція виконується, коли подія відбувається стосовно елемента.
+// button.addEventListener("click", () => {
+// console.log("Button was clicked");
+// });
+
+//ТУТ коли до кнопки застосовується подія клікб викликається функція виводу в консоль тексту 'Button was clicked'
