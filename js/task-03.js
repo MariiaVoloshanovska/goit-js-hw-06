@@ -21,8 +21,12 @@ const images = [
 const ourImages = document.querySelector(".gallery");
 
 const makeGallery = images.map(({ url, alt }) => {
-  return `<li><img src="${url} alt="${alt} height="800"></li>`;
+  return `<li><img src="${url} alt="${alt} height="300"></li>`;
 });
+
+ourImages.style.display = "flex";
+ourImages.style.flexDirection = "column";
+ourImages.style.gap = "35px";
 
 //join прибрав коми і він повернув нам суцільний рядок без ,
 // //додати розмітку в html
