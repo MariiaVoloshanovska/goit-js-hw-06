@@ -2,6 +2,7 @@
 //Додай слухачів кліків до кнопок, всередині яких збільшуй або зменшуй значення лічильника.
 //Оновлюй інтерфейс новим значенням змінної counterValue.
 
+// отримати посилання на кнопки і лічильник
 const firstButton = document.querySelector('[data-action = "decrement"]');
 const secondButton = document.querySelector('[data-action = "increment"]');
 const ourSpan = document.querySelector("#value");

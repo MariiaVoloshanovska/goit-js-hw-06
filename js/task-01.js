@@ -6,10 +6,13 @@
 
 // В результаті, в консолі будуть виведені наступні повідомлення.
 
+// отримотримати посилання на список і елементи списку
 const ourLists = document.querySelectorAll(".item");
 
+// вивід в консоль рядка з кількістю категорій
 console.log("Number of categories: " + ourLists.length);
 
+// перебір категорій і вивід заголовків, та кількістю елементів в категорії
 ourLists.forEach((ourList) => {
   console.log(`Category: ${ourList.firstElementChild.textContent}`);
 

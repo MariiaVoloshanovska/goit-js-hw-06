@@ -18,8 +18,10 @@ const images = [
 // Усі елементи галереї повинні додаватися в DOM за одну операцію додавання.
 // Додай мінімальне оформлення галереї флексбоксами або грідами через CSS класи.
 
+// отримати посилання на список
 const ourImages = document.querySelector(".gallery");
 
+//повернути в рядок елементи <li> з <img> , додати класи.
 const makeGallery = images.map(({ url, alt }) => {
   return `<li><img src="${url} alt="${alt} height="300"></li>`;
 });
